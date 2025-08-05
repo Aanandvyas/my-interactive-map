@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d1b65f8070200c8a9536e72ec4a647b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1d1b65f8070200c8a9536e72ec4a647b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1d1b65f8070200c8a9536e72ec4a647b = L.map(
+                "map_1d1b65f8070200c8a9536e72ec4a647b",
+                {
+                    center: [28.29575559444444, 74.96257234444445],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_23fb6ad8d5dfa3e43493c473ee7efbe5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_23fb6ad8d5dfa3e43493c473ee7efbe5.addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var marker_5a25f9155f611b63b9f8bbf3784b08a6 = L.marker(
+                [28.2926979, 74.9701363],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_34e32f4671e2afb36f6a00b871ac214a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e923dd0bb252d049d289d5c7a03d8ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_707e2e108ec4e0e067d58311c23bc813 = $(`<div id="html_707e2e108ec4e0e067d58311c23bc813" style="width: 100.0%; height: 100.0%;">Sheela Hospital</div>`)[0];
+                popup_6e923dd0bb252d049d289d5c7a03d8ca.setContent(html_707e2e108ec4e0e067d58311c23bc813);
+            
+        
+
+        marker_5a25f9155f611b63b9f8bbf3784b08a6.bindPopup(popup_6e923dd0bb252d049d289d5c7a03d8ca)
+        ;
+
+        
+    
+    
+            marker_5a25f9155f611b63b9f8bbf3784b08a6.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5a25f9155f611b63b9f8bbf3784b08a6.setIcon(icon_34e32f4671e2afb36f6a00b871ac214a);
+            
+    
+            var marker_379dbc286c0e40d3381ad5aaa2b309c6 = L.marker(
+                [28.2945923, 74.9761842],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_80749d5295927369fb170f24f7f76c1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b85171860637721784f604e09502ab8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b612ce0140689e155b74d106dc21c20 = $(`<div id="html_3b612ce0140689e155b74d106dc21c20" style="width: 100.0%; height: 100.0%;">Smt Sheela Goyal Memorial Heart and General Hospital</div>`)[0];
+                popup_b85171860637721784f604e09502ab8b.setContent(html_3b612ce0140689e155b74d106dc21c20);
+            
+        
+
+        marker_379dbc286c0e40d3381ad5aaa2b309c6.bindPopup(popup_b85171860637721784f604e09502ab8b)
+        ;
+
+        
+    
+    
+            marker_379dbc286c0e40d3381ad5aaa2b309c6.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_379dbc286c0e40d3381ad5aaa2b309c6.setIcon(icon_80749d5295927369fb170f24f7f76c1a);
+            
+    
+            var marker_b1b43c5bc4a3dccaddc44aa561729c44 = L.marker(
+                [28.2997532, 74.9647607],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_2340b0b26283465aff245cdba1c779f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee64dd3a93e01d241e3d2e8badb028b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_101f108375757003cd6a609efbdb07de = $(`<div id="html_101f108375757003cd6a609efbdb07de" style="width: 100.0%; height: 100.0%;">H.N.Hospital</div>`)[0];
+                popup_ee64dd3a93e01d241e3d2e8badb028b5.setContent(html_101f108375757003cd6a609efbdb07de);
+            
+        
+
+        marker_b1b43c5bc4a3dccaddc44aa561729c44.bindPopup(popup_ee64dd3a93e01d241e3d2e8badb028b5)
+        ;
+
+        
+    
+    
+            marker_b1b43c5bc4a3dccaddc44aa561729c44.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1b43c5bc4a3dccaddc44aa561729c44.setIcon(icon_2340b0b26283465aff245cdba1c779f7);
+            
+    
+            var marker_c8086026246df86b87230a749ffe2b8d = L.marker(
+                [28.2936773, 74.9555372],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_e8d1a148c0a2c6937942f67c599365ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e532119a54113fb95f8af213a3d3be90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14054e8ff440c1badde8ad8251216323 = $(`<div id="html_14054e8ff440c1badde8ad8251216323" style="width: 100.0%; height: 100.0%;">MRM Choudhary Hospital and Research Center</div>`)[0];
+                popup_e532119a54113fb95f8af213a3d3be90.setContent(html_14054e8ff440c1badde8ad8251216323);
+            
+        
+
+        marker_c8086026246df86b87230a749ffe2b8d.bindPopup(popup_e532119a54113fb95f8af213a3d3be90)
+        ;
+
+        
+    
+    
+            marker_c8086026246df86b87230a749ffe2b8d.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c8086026246df86b87230a749ffe2b8d.setIcon(icon_e8d1a148c0a2c6937942f67c599365ce);
+            
+    
+            var marker_068e67fe15d09b4b4c73e560b43e04a0 = L.marker(
+                [28.2898043, 74.959403],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_a40f07e576c10f9614da7370134eb9e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f213d3572c952f0db7525754055951c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5ff3a1ea1fb7aaf69e8792182802298 = $(`<div id="html_d5ff3a1ea1fb7aaf69e8792182802298" style="width: 100.0%; height: 100.0%;">Bhartiya Hospital Churu</div>`)[0];
+                popup_4f213d3572c952f0db7525754055951c.setContent(html_d5ff3a1ea1fb7aaf69e8792182802298);
+            
+        
+
+        marker_068e67fe15d09b4b4c73e560b43e04a0.bindPopup(popup_4f213d3572c952f0db7525754055951c)
+        ;
+
+        
+    
+    
+            marker_068e67fe15d09b4b4c73e560b43e04a0.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_068e67fe15d09b4b4c73e560b43e04a0.setIcon(icon_a40f07e576c10f9614da7370134eb9e7);
+            
+    
+            var marker_2bd2bd5dbf8e01d52a013dd097945def = L.marker(
+                [28.2929815, 74.9559725],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_da92f557ba2665e77f705f4886b6dcf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1a1c944687603fff9e078488901a849 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79d8ba1a811a641ba114564e30bb6c54 = $(`<div id="html_79d8ba1a811a641ba114564e30bb6c54" style="width: 100.0%; height: 100.0%;">Choudhary Hospital</div>`)[0];
+                popup_f1a1c944687603fff9e078488901a849.setContent(html_79d8ba1a811a641ba114564e30bb6c54);
+            
+        
+
+        marker_2bd2bd5dbf8e01d52a013dd097945def.bindPopup(popup_f1a1c944687603fff9e078488901a849)
+        ;
+
+        
+    
+    
+            marker_2bd2bd5dbf8e01d52a013dd097945def.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2bd2bd5dbf8e01d52a013dd097945def.setIcon(icon_da92f557ba2665e77f705f4886b6dcf6);
+            
+    
+            var marker_ac9426b39f83fad8f243d05f9d80df15 = L.marker(
+                [28.2940617, 74.9652364],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_713e49faf8f490adaf446e65d58df4e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14c117c3143558fa9ae6bb4422f73cef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19fcff7e1d7d8f7e1a1789453409f63e = $(`<div id="html_19fcff7e1d7d8f7e1a1789453409f63e" style="width: 100.0%; height: 100.0%;">Churu MultiSpeciality Hospital and Research Centre</div>`)[0];
+                popup_14c117c3143558fa9ae6bb4422f73cef.setContent(html_19fcff7e1d7d8f7e1a1789453409f63e);
+            
+        
+
+        marker_ac9426b39f83fad8f243d05f9d80df15.bindPopup(popup_14c117c3143558fa9ae6bb4422f73cef)
+        ;
+
+        
+    
+    
+            marker_ac9426b39f83fad8f243d05f9d80df15.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ac9426b39f83fad8f243d05f9d80df15.setIcon(icon_713e49faf8f490adaf446e65d58df4e9);
+            
+    
+            var marker_95cd2d8f12dc0b47d6033eaf3b4537e5 = L.marker(
+                [28.294905, 74.9556976],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_a929a3b33924e55d5bd1b14ab7aeabb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63246d3cd9af85b275331ab03ecb1082 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16535637d793034b1b5697a780823dec = $(`<div id="html_16535637d793034b1b5697a780823dec" style="width: 100.0%; height: 100.0%;">Shivam Hospital</div>`)[0];
+                popup_63246d3cd9af85b275331ab03ecb1082.setContent(html_16535637d793034b1b5697a780823dec);
+            
+        
+
+        marker_95cd2d8f12dc0b47d6033eaf3b4537e5.bindPopup(popup_63246d3cd9af85b275331ab03ecb1082)
+        ;
+
+        
+    
+    
+            marker_95cd2d8f12dc0b47d6033eaf3b4537e5.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_95cd2d8f12dc0b47d6033eaf3b4537e5.setIcon(icon_a929a3b33924e55d5bd1b14ab7aeabb9);
+            
+    
+            var marker_c8eaada13250f9c4dabd4569b5e2fc24 = L.marker(
+                [28.2923421, 74.9656339],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_e561c715ba76cf0a8643113e64bfa6bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_639111557a5556451f8970e285bfb9f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe23bf28cd9d04a0804c212aed80bf83 = $(`<div id="html_fe23bf28cd9d04a0804c212aed80bf83" style="width: 100.0%; height: 100.0%;">Heart Care & General Hospital</div>`)[0];
+                popup_639111557a5556451f8970e285bfb9f1.setContent(html_fe23bf28cd9d04a0804c212aed80bf83);
+            
+        
+
+        marker_c8eaada13250f9c4dabd4569b5e2fc24.bindPopup(popup_639111557a5556451f8970e285bfb9f1)
+        ;
+
+        
+    
+    
+            marker_c8eaada13250f9c4dabd4569b5e2fc24.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c8eaada13250f9c4dabd4569b5e2fc24.setIcon(icon_e561c715ba76cf0a8643113e64bfa6bc);
+            
+    
+            var marker_c14d01cf77873154699a05b0761fa374 = L.marker(
+                [28.3012555, 74.9647444],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_3cb0397b54eb2114da41221a167d23fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_700703ddf248a934757359b99195db40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0798702ef8fda36ba12a55bebf0c3f8b = $(`<div id="html_0798702ef8fda36ba12a55bebf0c3f8b" style="width: 100.0%; height: 100.0%;">Somra ENT Hospital</div>`)[0];
+                popup_700703ddf248a934757359b99195db40.setContent(html_0798702ef8fda36ba12a55bebf0c3f8b);
+            
+        
+
+        marker_c14d01cf77873154699a05b0761fa374.bindPopup(popup_700703ddf248a934757359b99195db40)
+        ;
+
+        
+    
+    
+            marker_c14d01cf77873154699a05b0761fa374.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c14d01cf77873154699a05b0761fa374.setIcon(icon_3cb0397b54eb2114da41221a167d23fa);
+            
+    
+            var marker_6b39bb284c1ea0ac0004170b91656992 = L.marker(
+                [28.2952519, 74.9545619],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_347a0fdf8c9f0d9ee543cf298f79da2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a435830b8226c686b11815012701ecf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0907d077803739b8d323377725cf2481 = $(`<div id="html_0907d077803739b8d323377725cf2481" style="width: 100.0%; height: 100.0%;">JMB Eye Hospital</div>`)[0];
+                popup_6a435830b8226c686b11815012701ecf.setContent(html_0907d077803739b8d323377725cf2481);
+            
+        
+
+        marker_6b39bb284c1ea0ac0004170b91656992.bindPopup(popup_6a435830b8226c686b11815012701ecf)
+        ;
+
+        
+    
+    
+            marker_6b39bb284c1ea0ac0004170b91656992.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b39bb284c1ea0ac0004170b91656992.setIcon(icon_347a0fdf8c9f0d9ee543cf298f79da2e);
+            
+    
+            var marker_c5db9ed450740bac40805d7f4a62bc1e = L.marker(
+                [28.2968459, 74.9713566],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_c8cdfdf75d1c113b1d3c79fbe397101a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_827637440e300a9151d8e49ea1865aa9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4215ed496699f32a826cee231a8387a2 = $(`<div id="html_4215ed496699f32a826cee231a8387a2" style="width: 100.0%; height: 100.0%;">Goyal Hospital</div>`)[0];
+                popup_827637440e300a9151d8e49ea1865aa9.setContent(html_4215ed496699f32a826cee231a8387a2);
+            
+        
+
+        marker_c5db9ed450740bac40805d7f4a62bc1e.bindPopup(popup_827637440e300a9151d8e49ea1865aa9)
+        ;
+
+        
+    
+    
+            marker_c5db9ed450740bac40805d7f4a62bc1e.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c5db9ed450740bac40805d7f4a62bc1e.setIcon(icon_c8cdfdf75d1c113b1d3c79fbe397101a);
+            
+    
+            var marker_b7024e3fd24426bb950c839ac032bc1e = L.marker(
+                [28.2941085, 74.9654974],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_a06d5d8a88507bbe9c879cf5e07d0223 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f71c86b622ee13d5a24d19b8c2322f0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44ba291ae8e0a0dddebe79c6766aac03 = $(`<div id="html_44ba291ae8e0a0dddebe79c6766aac03" style="width: 100.0%; height: 100.0%;">Balaji Hospital</div>`)[0];
+                popup_f71c86b622ee13d5a24d19b8c2322f0c.setContent(html_44ba291ae8e0a0dddebe79c6766aac03);
+            
+        
+
+        marker_b7024e3fd24426bb950c839ac032bc1e.bindPopup(popup_f71c86b622ee13d5a24d19b8c2322f0c)
+        ;
+
+        
+    
+    
+            marker_b7024e3fd24426bb950c839ac032bc1e.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b7024e3fd24426bb950c839ac032bc1e.setIcon(icon_a06d5d8a88507bbe9c879cf5e07d0223);
+            
+    
+            var marker_b2fbe0997a3828b2947d363f404dab01 = L.marker(
+                [28.2961385, 74.9655075],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_4698b95d163cdd53644d5bd86b0ba9d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f692abfb6e49f21cc1822611d87df37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40bdac7faa0bea5cf8e717456a46664d = $(`<div id="html_40bdac7faa0bea5cf8e717456a46664d" style="width: 100.0%; height: 100.0%;">Churu Hospital</div>`)[0];
+                popup_3f692abfb6e49f21cc1822611d87df37.setContent(html_40bdac7faa0bea5cf8e717456a46664d);
+            
+        
+
+        marker_b2fbe0997a3828b2947d363f404dab01.bindPopup(popup_3f692abfb6e49f21cc1822611d87df37)
+        ;
+
+        
+    
+    
+            marker_b2fbe0997a3828b2947d363f404dab01.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2fbe0997a3828b2947d363f404dab01.setIcon(icon_4698b95d163cdd53644d5bd86b0ba9d0);
+            
+    
+            var marker_9fa5210dfff8175a6137078cf5475e05 = L.marker(
+                [28.304733, 74.9701186],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_35520aef87838070cbd016e83e56d0d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71520845ab76a128f8fdbb1961dd953b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_340f06d30c051274509a88592be2886a = $(`<div id="html_340f06d30c051274509a88592be2886a" style="width: 100.0%; height: 100.0%;">Bajaj Eye Hospital</div>`)[0];
+                popup_71520845ab76a128f8fdbb1961dd953b.setContent(html_340f06d30c051274509a88592be2886a);
+            
+        
+
+        marker_9fa5210dfff8175a6137078cf5475e05.bindPopup(popup_71520845ab76a128f8fdbb1961dd953b)
+        ;
+
+        
+    
+    
+            marker_9fa5210dfff8175a6137078cf5475e05.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9fa5210dfff8175a6137078cf5475e05.setIcon(icon_35520aef87838070cbd016e83e56d0d6);
+            
+    
+            var marker_30f06382699b1e3c4ed9268ad2b8cd4e = L.marker(
+                [28.2960404, 74.9543489],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_225863ebb2dda6e02b9e30edcda453c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83f02b1ea2a6bbea56f5213bb6d82e2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3368d35c2521e7543dc73fb5e99fbb04 = $(`<div id="html_3368d35c2521e7543dc73fb5e99fbb04" style="width: 100.0%; height: 100.0%;">Ravindra Hospital</div>`)[0];
+                popup_83f02b1ea2a6bbea56f5213bb6d82e2d.setContent(html_3368d35c2521e7543dc73fb5e99fbb04);
+            
+        
+
+        marker_30f06382699b1e3c4ed9268ad2b8cd4e.bindPopup(popup_83f02b1ea2a6bbea56f5213bb6d82e2d)
+        ;
+
+        
+    
+    
+            marker_30f06382699b1e3c4ed9268ad2b8cd4e.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_30f06382699b1e3c4ed9268ad2b8cd4e.setIcon(icon_225863ebb2dda6e02b9e30edcda453c3);
+            
+    
+            var marker_81ed9cc47e28c1ea7e0ac107060a7e69 = L.marker(
+                [28.2920228, 74.961745],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_6c01d5862c3698ef5fc6b4fc5385ef2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83f5dce3887b383e734045337d2bd4e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9ac161f282a541b15f2d56f35485c9e = $(`<div id="html_e9ac161f282a541b15f2d56f35485c9e" style="width: 100.0%; height: 100.0%;">Mumtaj Hospital</div>`)[0];
+                popup_83f5dce3887b383e734045337d2bd4e6.setContent(html_e9ac161f282a541b15f2d56f35485c9e);
+            
+        
+
+        marker_81ed9cc47e28c1ea7e0ac107060a7e69.bindPopup(popup_83f5dce3887b383e734045337d2bd4e6)
+        ;
+
+        
+    
+    
+            marker_81ed9cc47e28c1ea7e0ac107060a7e69.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_81ed9cc47e28c1ea7e0ac107060a7e69.setIcon(icon_6c01d5862c3698ef5fc6b4fc5385ef2c);
+            
+    
+            var marker_f436ccd4facb0d1cf2ae9010be8107de = L.marker(
+                [28.3023889, 74.9498601],
+                {
+}
+            ).addTo(map_1d1b65f8070200c8a9536e72ec4a647b);
+        
+    
+            var icon_480314fb8dfc85f485fa22a83ab24cc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ac02947778b223f1e49e5f62a6b8d0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_660bcce0fbbc73ba08305fd3dc320673 = $(`<div id="html_660bcce0fbbc73ba08305fd3dc320673" style="width: 100.0%; height: 100.0%;">Sanjeewani Hospital</div>`)[0];
+                popup_4ac02947778b223f1e49e5f62a6b8d0a.setContent(html_660bcce0fbbc73ba08305fd3dc320673);
+            
+        
+
+        marker_f436ccd4facb0d1cf2ae9010be8107de.bindPopup(popup_4ac02947778b223f1e49e5f62a6b8d0a)
+        ;
+
+        
+    
+    
+            marker_f436ccd4facb0d1cf2ae9010be8107de.bindTooltip(
+                `<div>
+                     Click for Hospital Name
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f436ccd4facb0d1cf2ae9010be8107de.setIcon(icon_480314fb8dfc85f485fa22a83ab24cc2);
+            
+</script>
+</html>
